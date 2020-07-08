@@ -16,10 +16,18 @@ funBusClick.addEventListener('click', ()=>{
     funBusClick.style.color = 'pink';
 })
 
+
+// const navHover = document.querySelector('.nav')
+// navHover.addEventListener('mouseover', (event)=>{
+//     navHover.style.backgroundColor = 'green';
+//     event.stopImmediatePropagation();
+// })
+
 const bannerHover = document.querySelector('.nav a')
 bannerHover.addEventListener('mouseover', ()=>{
     bannerHover.style.color = 'pink';
 })
+
 
 document.addEventListener('keydown', function (event){
     if (event.key === 'Escape'){
@@ -55,9 +63,20 @@ document.addEventListener('keyup', function (event){
     }
 } )
 
+//doubeclick footer color 1
 const foot = document.querySelector('.footer p')
-foot.addEventListener('mouseup', ()=>{
-    foot.style.backgroundColor = 'red';
+foot.addEventListener('dblclick', (event)=>{
+    foot.style.backgroundColor = 'red';   
+    event.stopPropagation();
+})
+
+
+//doubleclick text color 2
+
+const foots = document.querySelector('.footer')
+foots.addEventListener('dblclick', ()=>{
+    foots.style.backgroundColor = 'green';
+    foot.style.backgroundColor = 'transparent';
 })
 
 // * [ ] Nest two similar events somewhere in the site and prevent the event propagation properly
