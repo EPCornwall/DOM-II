@@ -18,11 +18,6 @@ funBusClick.addEventListener('click', ()=>{
 })
 
 
-// const navHover = document.querySelector('.nav')
-// navHover.addEventListener('mouseover', (event)=>{
-//     navHover.style.backgroundColor = 'green';
-//     event.stopImmediatePropagation();
-// })
 
 const bannerHover = document.querySelector('.nav a')
 bannerHover.addEventListener('mouseover', ()=>{
